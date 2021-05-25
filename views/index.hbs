@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script> -->
+	<link rel="icon" type="text/css" href="./public/Image/icon.png">
+	<link rel="stylesheet" href="./public/css/index.css">
+</head>
+<body>
+	<div class="mainmenudiv">
+		<div class="mainmenudiv1 mainmenu">
+			<p id="menuheader"></p>
+			<!-- <p>Welcome To My Chat Application </p>
+			<p>Welcome To My Chat Application </p> -->
+			<img src="./public/Image/menu.png" onclick="showmenu(1,0)">
+		</div>
+		<div class="mainmenudiv2 mainmenu">
+			<a href="/login"><p>Sing In</p></a>
+			<p id="close" onclick="showmenu(0,1);">Close</p>
+		</div>
+	</div>
+	<div class="regdiv">
+		<div class="regdiv1">
+			<form action="\" method="POST" autocomplete="off">
+				<p>Enter Your Name </p>
+				<input type="text" name="name" class="regint" placeholder="User Name" value="{{lookup input 0 }}">
+				<p>Enter Uniqe Name</p>
+				<input type="text" name="uniqe" class="regint" placeholder="Uniqe Name" value="{{lookup input 1 }}">
+				<p>Enter Your Password</p>
+				<input type="password" name="pass" class="regint" placeholder="Password" value="{{lookup input 2 }}" ondblclick="inputfun1()">
+				<p></p>
+				<button type="submit">Sign Up</button>
+				<p class="error" style="display:{{lookup style1 0}};color:{{lookup style1 1}}">{{lookup style1 2}}</p>
+			</form>
+	</div>
+	<p id="copyright">Copyright 2021 ridip and startup &#169;</p>
+	<script src="./public/js/typed.js"></script>
+	<script src="./public/js/index.js"></script>
+	<script src="./public/js/type.js"></script>
+</body>
+</html>

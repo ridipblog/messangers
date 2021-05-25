@@ -1,0 +1,3 @@
+node_modules
+./require/config.env
+./require/connection.js

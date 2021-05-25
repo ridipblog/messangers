@@ -1,0 +1,169 @@
+.mesdiv
+{
+	display: flex;
+	flex-wrap: wrap;
+	flex-flow: column;
+	flex-direction: column;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	text-align: center;
+	margin-top: 20px;
+	text-align: center;
+}
+.mesdiv1
+{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+	align-content: center;
+	flex-flow: column;
+	justify-content: center;
+	width: 100%;
+	word-wrap: break-word;
+	border:2px solid white;
+	text-align: center;
+}
+.headh
+{
+	color: white;
+	border:none;
+	border-bottom: 1px solid yellow;
+	cursor: grab;
+	font-family: cursive;
+	width: 100%;
+}
+.mesbox
+{
+	display: flex;
+	flex-flow: column;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	
+	align-items: center;
+	align-content: center;
+	width: 70%;
+	text-align: center;
+	resize: none;
+	outline: none;
+	height: 50vh;
+	background: white;
+	color: white;
+	border-radius: 20px;
+	font-size: 14px;
+	font-family: sans-serif;
+	margin-top: 20px;
+	border:2px solid yellow;
+	color: black;
+	font-weight: bold;
+	overflow: scroll;
+}
+.mesbox1
+{
+	width: 50%;
+	text-align: center;
+	resize: none;
+	outline: none;
+	height: 8vh;
+	background: #150322;
+	color: white;
+	border-radius: 10px;
+	font-size: 14px;
+	font-family: sans-serif;
+	margin-top: 20px;
+}
+.mesbtn
+{
+	width: 40%;
+	border-radius: 20px;
+	background: transparent;
+	color: white;
+	cursor: pointer;
+	border:2px solid white;
+	margin-bottom: 10px;
+	font-size: 18px;
+	font-family: monospace;
+	transition: 1s;
+}
+.mesbtn:hover
+{
+	word-spacing: 10px;
+	font-style: italic;
+}
+.mesp
+{
+	width: 90%;
+	text-align: center;
+	border:2px solid black;
+	border-radius: 20px;
+}
+.typing
+{
+	color: white;
+}
+.updatediv
+{
+	display: flex;
+	flex-wrap: wrap;
+	flex-flow: column;
+	flex-direction: column;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	text-align: center;
+	margin-top: 20px;
+}
+.updatediv1
+{
+	display: flex;
+	flex-wrap: wrap;
+	flex-flow: row;
+	flex-direction: row;
+	text-align: center;
+	align-content: center;
+	flex-flow: column;
+	justify-content: center;
+	width: 100%;
+	word-wrap: break-word;
+	margin-top: 20px;
+	border:2px solid #2E2D2B;
+	background: #020d12;
+}
+.updateint
+{
+	width: 60%;
+	color:white;
+	background: transparent;
+	border: 3px double white;
+	outline: none;
+	margin:20px;
+	font-family: monospace;
+	text-align: center;
+}
+.updatebtn
+{
+	width: 30%;
+	border-radius: 30px;
+	outline: none;
+	background: #020d12;
+	border:2px solid #2E2D2B;
+	cursor: pointer;
+	color: white;
+	font-weight: bold;
+	font-family: sans-serif;
+	font-size: 17px;
+	margin-bottom: 10px;
+}
+.updatediv h1
+{
+	color: blue;
+	font-family: monospace;
+}
+::-webkit-scrollbar {
+  width: 2px;
+  background: gray;
+  height: 2px;
+}

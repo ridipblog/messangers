@@ -1,0 +1,61 @@
+.logdiv
+{
+	display: flex;
+	flex-wrap: wrap;
+	flex-flow: column;
+	flex-direction: column;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	text-align: center;
+	margin-top: 20px;
+}
+.logdiv1
+{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	text-align: center;
+	align-content: center;
+	flex-flow: column;
+	justify-content: center;
+	width: 100%;
+	word-wrap: break-word;
+	border:2px solid white;
+}
+.logint
+{
+	width: 60%;
+	color:white;
+	background: transparent;
+	border:1px solid gray;
+	border:none;
+	border-bottom: 1px solid white;
+	outline: none;
+}
+.logdiv1 button
+{
+	border:1px solid gray;
+	color:white;
+	font-size: 18px;
+	font-family: sans-serif;
+	background: #140514;
+	width: 40%;
+	cursor: grab;
+	transition: 2s;
+	margin-bottom: 10px;
+}
+.logdiv1 button:hover
+{
+	outline: none;
+	border-radius: 30px;
+	background: #29464a;
+	border:1px solid white;
+}
+.logdiv1 p
+{
+	color:gray;
+	font-size: 18px;
+	letter-spacing: 2px;
+}

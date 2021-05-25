@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Log In Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script> -->
+	<link rel="icon" type="text/css" href="./public/Image/icon.png">
+	<link rel="stylesheet" href="./public/css/index.css">
+	<link rel="stylesheet"  href="./public/css/login.css">
+</head>
+<body>
+	<div class="mainmenudiv">
+		<div class="mainmenudiv1 mainmenu">
+			<img src="./public/Image/menu.png" onclick="showmenu(1,0)">
+		</div>
+		<div class="mainmenudiv2 mainmenu">
+			<a href="/"><p>Sign Up</p></a>
+			<p id="close" onclick="showmenu(0,1);">Close</p>
+		</div>
+	</div>
+	<div class="logdiv">
+		<div class="logdiv1">
+			<form action="/login" method="POST" autocomplete="off">
+				<p>Enter Your Uniqe Name</p>
+				<input type="text" name="uniqe_name" class="logint" placeholder="Uniqe Name" value="{{lookup input1 0}}">
+				<p>Enter Your Password</p>
+				<input type="password" name="log_pass" class="logint" placeholder="Password" value="{{lookup input1 1}}" ondblclick="inputfun1()">
+				<p></p>
+				<button type="submit">Log In</button>
+				<p class="error" style="display: {{lookup style2 0}};color: {{lookup style2 1}}">{{lookup style2 2}}</p>
+			</form>
+		</div>
+	</div>
+	<p id="copyright">Copyright 2021 ridip and startup &#169;</p>
+	<script src="./public/js/index.js"></script>
+	<script src="./public/js/login.js"></script>
+</body>
+</html>

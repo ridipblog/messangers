@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Profile Of {{uniqe_name}}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+	<link rel="icon" href="./public/Image/icon.png">
+	<link rel="stylesheet"  href="./public/css/index.css">
+	<link rel="stylesheet"  href="./public/css/home.css">
+</head>
+<body>
+	<div class="mainmenudiv">
+		<div class="mainmenudiv1 mainmenu">
+			<img src="./public/Image/menu.png" onclick="showmenu(1,0)">
+		</div>
+		<div class="mainmenudiv2 mainmenu">
+			<a href="/home" style="border-bottom:2px solid white;color:gray"><p>Profile</p></a>
+			<a href="/search"><p>Search</p></a>
+			<a href="/logout"><p>Logout</p></a>
+			<p id="close" onclick="showmenu(0,1);">Close</p>
+		</div>
+	</div>
+	<div class="mesdiv">
+		<h1 class="headh" id="user">{{uniqe_name}}</h1>
+		<div class="mesdiv1">
+			<div class="mesbox" id="mesboxid"></div>
+			<p></p>
+			<p class="typing" id="typing1"></p>
+			<textarea class="mesbox1" id="mesboxid1"></textarea>
+			<p></p>
+			<button type="submit" class="mesbtn" id="mesbtnid">Send -></button>
+		</div>
+	</div>
+	<div class="updatediv">
+		<h1>{{update_text}}</h1>
+		<div class="updatediv1">
+			<form action="/user_name" method="POST" autocomplete="off">
+				<input type="text" name="user_name" class="updateint" ondblclick="updateintfun1(0)" value="{{user_name}}" readonly="true">
+				<button type="submit" class="updatebtn">User Name</button>
+			</form>
+		</div>
+		<div class="updatediv1">
+			<form action="/uniqe_name" method="POST" autocomplete="off">
+				<input type="text" name="uniqe_name" class="updateint" ondblclick="updateintfun1(1)" value="{{uniqe_name}}" readonly="true">
+				<button type="submit" class="updatebtn">Uniqe Name</button>
+			</form>
+		</div>
+		<div class="updatediv1">
+			<form action="/user_pass" method="POST" autocomplete="off">
+				<input type="password" name="user_pass" class="updateint" ondblclick="updateintfun1(2)" value="{{user_pass}}" readonly="true">
+				<button type="submit" class="updatebtn">User Pass</button>
+			</form>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="./public/js/index.js"></script>
+	<script src="./public/js/home.js"></script>
+</body>
+</html>

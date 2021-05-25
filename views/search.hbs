@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>search Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="./public/Image/icon.png">
+	<link rel="stylesheet"  href="./public/css/index.css">
+	<link rel="stylesheet" href="./public/css/search.css">
+</head>
+<body>
+	<div class="mainmenudiv">
+		<div class="mainmenudiv1 mainmenu">
+			<img src="./public/Image/menu.png" onclick="showmenu(1,0)">
+		</div>
+		<div class="mainmenudiv2 mainmenu">
+			<a href="/home"><p>Profile</p></a>
+			<a href="/search" style="border-bottom:2px solid white;color:gray"><p>Search</p></a>
+			<a href="/logout"><p>Logout</p></a>
+			<p id="close" onclick="showmenu(0,1);">Close</p>
+		</div>
+	</div>
+	<div class="searchdiv">
+		<input type="text" name="" class="searchint" placeholder="Search Uniqe Name">
+		<button class="searchbtn" onclick="searchfun1()">Search..</button>
+	</div>
+	<!-- {{#each data as | value keys|}}
+		<p>{{value.name}}</p>
+	{{/each}} -->
+	<div class="usersdiv">
+		{{#each data as |value|}}
+			<div class="usersdiv1">
+				<p class="usersp">User Name:<br>{{value.user_name}}</p>
+				<p class="usersp">Uniqe Name:<br><span class="usersp1">{{value.uniqe_name}}</span></p>
+			</div>
+		{{/each}}
+	</div>
+	<script src="./public/js/search.js"></script>
+	<script src="./public/js/index.js"></script>
+</body>
+</html>
