@@ -1,5 +1,5 @@
-// var socket=io.connect('http://localhost:3000/');
-var socket=io.connect('https://e94f70a34666.ngrok.io');
+var socket=io.connect('http://localhost:3000/');
+// var socket=io.connect('https://e94f70a34666.ngrok.io');
 var message=$('#mesboxid1');
 var mesarea=$('#mesboxid');
 var send=$('#mesbtnid');
